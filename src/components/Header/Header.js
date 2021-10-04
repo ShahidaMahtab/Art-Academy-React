@@ -8,7 +8,7 @@ const Header = () => {
       <Navbar variant="light shadow-sm" bg="light">
         <Container>
           <Navbar.Brand>
-            <h3 className="fs-4 fw-bold header-text">Painting Academy</h3>
+            <h3 className="fs-4 fw-bold header-text">Art Academy</h3>
           </Navbar.Brand>
           <Nav className="ms-auto">
             <NavLink
