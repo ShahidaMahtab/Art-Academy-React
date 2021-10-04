@@ -1,12 +1,12 @@
 # Art Academy
 
-This project was created using react [Art Academy](https://github.com/facebook/create-react-app).
+This project was created using react [Art Academy](https://art-academy-react.netlify.app/).
 
 ## Website Details
-
-*This website helps student to enroll in art academy.
-*Website consists of four section home,about us,services,contact.
-\*Different type courses from basic to advance courses are available.
+* This website helps student to enroll in art academy.
+* Website consists of four section home,about us,services,contact.
+* Different type of courses from basic to advance courses are available.
+* Students interesed in art can easily navigate the website.
 
 ## Available Scripts
 
