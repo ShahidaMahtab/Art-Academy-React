@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# Art Academy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created using react [Art Academy](https://github.com/facebook/create-react-app).
+
+## Website Details
+
+*This website helps student to enroll in art academy.
+*Website consists of four section home,about us,services,contact.
+\*Different type courses from basic to advance courses are available.
 
 ## Available Scripts
 
