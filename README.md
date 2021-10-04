@@ -3,6 +3,7 @@
 This project was created using react [Art Academy](https://art-academy-react.netlify.app/).
 
 ## Website Details
+
 * This website helps student to enroll in art academy.
 * Website consists of four section home,about us,services,contact.
 * Different type of courses from basic to advance courses are available.
