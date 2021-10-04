@@ -4,39 +4,32 @@ import Services from "../Services/Services";
 import banner from "../../Image/banner.jpg";
 import "./Home.css";
 const Home = () => {
-  const [toggle, setToggle] = useState(false);
   return (
     <>
       <Card className="text-white">
         <Card.Img src={banner} alt="Card image" />
         <Card.ImgOverlay>
           <Card.Title>
-            <div className="text-center p-5 mt-5 lh-lg">
-              <h2 className="lh-sm mt-5">
-                Find art in yourself,
-                <br />
-                not yourself
-                <br /> in art.
-              </h2>
-              <p>
-                We have the best instructors and guidlines for you to learn
-                everything about art.
-              </p>
-              <button
-                onClick={() => setToggle(!toggle)}
-                className="btnColor border border-0 shadow-lg text-white py-1 px-3 rounded-pill"
-              >
+            <div className="text-center p-5 mt-5">
+              <div className="mt-4">
+                <small className="text-success">
+                  Art academy register online
+                </small>
+                <h1 className="lh-sm display-2 fw-bold">
+                  Find art in yourself,
+                  <br />
+                  not yourself
+                  <br /> in art.
+                </h1>
+                <p className="fs-5 fw-normal">
+                  We have the best instructors and guidlines <br /> for you to
+                  learn everything about art. <br /> courses from basics to
+                  advance are provided here.
+                </p>
+              </div>
+              <button className="btnColor border border-0 shadow-lg text-white py-2 px-3 rounded-pill">
                 Enroll now
               </button>
-              {toggle ? (
-                <div>
-                  <h6>Register today</h6>
-                </div>
-              ) : (
-                <div>
-                  <h6 className="text-success">check your mail</h6>
-                </div>
-              )}
             </div>
           </Card.Title>
         </Card.ImgOverlay>
