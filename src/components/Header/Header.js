@@ -1,14 +1,21 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPalette } from "@fortawesome/free-solid-svg-icons";
 import "./Header.css";
 const Header = () => {
+  const palette = (
+    <FontAwesomeIcon icon={faPalette} className="text-warning fs-1" />
+  );
   return (
     <div>
       <Navbar variant="light shadow" bg="light">
         <Container>
           <Navbar.Brand>
-            <h3 className="fs-4 fw-bold header-text">Art Academy</h3>
+            <h3 className="fs-4 fw-bold header-text text-uppercase">
+              {palette} Art Academy
+            </h3>
           </Navbar.Brand>
           <Nav className="ms-auto">
             <NavLink
