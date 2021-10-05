@@ -12,14 +12,14 @@ const LargeService = () => {
     history.push("/home");
   };
   return (
-    <Container className="my-5 text-center text-dark">
+    <Container className="my-5 text-center text-dark mx-auto">
       <Title
         titleStart="Our"
         titleEnd="Services"
         subtitle="best services 2021"
       ></Title>
       <div>
-        <Row xs={1} md={2} lg={4} className="g-4 mt-2">
+        <Row xs={1} md={2} lg={4} className="g-4 mt-2 mx-auto">
           {services.map((service) => (
             <ServiceDetails
               key={service.key}

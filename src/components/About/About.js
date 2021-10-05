@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import AboutDetail from "../AboutDetail/AboutDetail";
 import Title from "../Title/Title";
 
@@ -11,18 +11,18 @@ const About = () => {
       .then((data) => setAbout(data));
   }, []);
   return (
-    <div className="px-3">
+    <Container className="mt-5">
       <div className="mt-3 mb-5">
         <Title titleStart="About" titleEnd="Us" subtitle="why join us?"></Title>
       </div>
       <div className="pb-5">
-        <Row xs={1} md={2} lg={3} className="g-4">
+        <Row xs={1} md={2} lg={3} className="g-4 mx-auto">
           {about.map((item) => (
             <AboutDetail key={item.key} about={item}></AboutDetail>
           ))}
         </Row>
       </div>
-    </div>
+    </Container>
   );
 };
 

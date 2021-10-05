@@ -17,10 +17,13 @@ const Footer = () => {
               Features
             </a>
             <a className="nav-link text-white ms-4" href="/#">
-              services
+              Services
             </a>
             <a className="nav-link text-white ms-4" href="/#">
-              contact
+              Contact
+            </a>
+            <a className="nav-link text-white ms-4" href="/#">
+              Reviews
             </a>
           </div>
         </nav>

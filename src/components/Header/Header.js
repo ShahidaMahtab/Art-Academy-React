@@ -5,7 +5,7 @@ import "./Header.css";
 const Header = () => {
   return (
     <div>
-      <Navbar variant="light shadow-sm" bg="light">
+      <Navbar variant="light shadow" bg="light">
         <Container>
           <Navbar.Brand>
             <h3 className="fs-4 fw-bold header-text">Art Academy</h3>
@@ -21,13 +21,19 @@ const Header = () => {
               to="/about"
               className="text-decoration-none fs-5 me-3 header-text fw-bold"
             >
-              About Us
+              About
             </NavLink>
             <NavLink
               to="/lgservices"
               className="text-decoration-none fs-5 me-3 header-text fw-bold"
             >
               Services
+            </NavLink>
+            <NavLink
+              to="/review"
+              className="text-decoration-none fs-5 me-3 header-text fw-bold"
+            >
+              Reviews
             </NavLink>
             <NavLink
               to="/contact"

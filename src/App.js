@@ -8,6 +8,7 @@ import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import NotFound from "./components/NotFound/NotFound";
 import Footer from "./components/Footer/Footer";
+import Review from "./components/Review/Review";
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
           </Route>
           <Route path="/about">
             <About></About>
+          </Route>
+          <Route path="/review">
+            <Review></Review>
           </Route>
           <Route path="/contact">
             <Contact></Contact>
