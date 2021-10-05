@@ -3,6 +3,7 @@ import { Card } from "react-bootstrap";
 import Services from "../Services/Services";
 import banner from "../../Image/banner.jpg";
 import "./Home.css";
+import Review from "../Review/Review";
 const Home = () => {
   return (
     <>
@@ -37,6 +38,7 @@ const Home = () => {
         </Card.ImgOverlay>
       </Card>
       <Services></Services>
+      <Review></Review>
     </>
   );
 };
