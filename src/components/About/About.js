@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Container as div, Image, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import AboutDetail from "../AboutDetail/AboutDetail";
 import Title from "../Title/Title";
 
