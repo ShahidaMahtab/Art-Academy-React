@@ -2,8 +2,10 @@ import React, { useContext } from "react";
 import { CartContext } from "../../context/CartProvider";
 
 const Cart = () => {
-  const { cart } = useContext(CartContext);
-  console.log("cart", cart);
+  const { cart, setCart } = useContext(CartContext);
+  const handleCartClear = () => {
+    setCart([]);
+  };
   let total = 0;
   for (const service of cart) {
     total += service.price;
@@ -29,6 +31,9 @@ const Cart = () => {
           </div>
         ))}
       </article>
+      <button onClick={handleCartClear} className="btn btnColor text-white">
+        Clear
+      </button>
     </section>
   );
 };

@@ -16,6 +16,7 @@ const useCart = () => {
   return {
     handleAddToCart,
     cart,
+    setCart,
   };
 };
 
