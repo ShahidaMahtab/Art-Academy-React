@@ -1,13 +1,19 @@
-import React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import React, { useState } from "react";
+import { Button, Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPalette } from "@fortawesome/free-solid-svg-icons";
+import { faPalette, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import "./Header.css";
+import Cart from "../Cart/Cart";
 const Header = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   const palette = (
     <FontAwesomeIcon icon={faPalette} className="text-warning fs-1" />
   );
+  const shoppingCart = <FontAwesomeIcon icon={faShoppingCart} />;
   return (
     <div>
       <Navbar variant="light shadow" bg="light">
@@ -37,17 +43,39 @@ const Header = () => {
               Services
             </NavLink>
             <NavLink
-              to="/review"
-              className="text-decoration-none fs-5 me-3 header-text fw-bold"
-            >
-              Reviews
-            </NavLink>
-            <NavLink
               to="/contact"
               className="text-decoration-none fs-5 me-3 header-text fw-bold"
             >
               Contact
             </NavLink>
+            <NavLink
+              to="/register"
+              className="text-decoration-none fs-5 me-3 header-text fw-bold"
+            >
+              SignUp
+            </NavLink>
+            {/*  <NavLink
+              to="/cart"
+              className="text-decoration-none fs-5 me-3 header-text fw-bold"
+            >
+              {shoppingCart}
+            </NavLink> */}
+            <Button
+              onClick={handleShow}
+              className="me-2 border border-0 border-btnColor text-white btnColor"
+            >
+              {shoppingCart}
+            </Button>
+            <Offcanvas show={show} onHide={handleClose} placement="end">
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title className="header-text fw-bold text-center mx-auto fs-3">
+                  Courses Cart
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                <Cart></Cart>
+              </Offcanvas.Body>
+            </Offcanvas>
           </Nav>
         </Container>
       </Navbar>
