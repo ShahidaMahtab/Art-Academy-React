@@ -7,8 +7,8 @@ import Review from "../Review/Review";
 const Home = () => {
   return (
     <>
-      <Card className="text-white h-100">
-        <Card.Img src={banner} alt="Card image" className="" />
+      <Card className="text-white h-100 py-md-0 py-5">
+        <Card.Img src={banner} alt="Card image" className="img-fluid" />
         <Card.ImgOverlay className="text-center p-md-5 mt-md-5">
           <small className="text-success mt-5 d-block">
             Art academy register online
@@ -24,7 +24,7 @@ const Home = () => {
             everything about art. <br /> courses from basics to advance are
             provided here.
           </Card.Text>
-          <button className="btnColor border border-0 shadow-lg text-white py-2 px-3 rounded-pill d-none d-md-block mx-auto">
+          <button className="btnColor border border-0 shadow-lg text-white py-1 py-md-2 px-3 rounded-pill  mx-auto mb-4 mb-md-0 d-block">
             Enroll now
           </button>
         </Card.ImgOverlay>
