@@ -11,7 +11,7 @@ const About = () => {
       .then((data) => setAbout(data));
   }, []);
   return (
-    <Container className="mt-5">
+    <Container className="mt-5 py-5">
       <div className="mt-3 mb-5">
         <Title titleStart="About" titleEnd="Us" subtitle="why join us?"></Title>
       </div>
