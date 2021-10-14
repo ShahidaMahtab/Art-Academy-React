@@ -13,7 +13,7 @@ const Services = () => {
     history.push("/lgservices");
   };
   return (
-    <Container className="mt-5 text-center text-dark">
+    <Container className="mt-5 text-center text-dark" id="services">
       <Title
         titleStart="Our"
         titleEnd="Services"

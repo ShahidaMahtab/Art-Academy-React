@@ -5,19 +5,19 @@ import email from "../../Image/contact.png";
 
 const Contact = () => {
   return (
-    <>
-      <div className="mt-5">
+    <section className="mt-5 pt-2">
+      <div className="my-5">
         <Title
           titleStart="Have Some"
           titleEnd="Question?"
           subtitle="Get in Touch"
         ></Title>
       </div>
-      <Container className="mt-4 d-flex justify-content-center align-items-center p-3 mb-5 mx-auto">
+      <Container className="mt-4 d-md-flex justify-content-center align-items-center p-3 mb-md-5 mx-auto">
         <div className="pe-5">
           <img src={email} alt="" />
         </div>
-        <div className="ps-5 h-100">
+        <div className="ps-md-5 h-100 ps-3 m-2 m-md-0">
           <Form>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>
@@ -44,7 +44,7 @@ const Contact = () => {
           </Form>
         </div>
       </Container>
-    </>
+    </section>
   );
 };
 

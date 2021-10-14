@@ -1,6 +1,6 @@
 # Art Academy
 
-This project was created using react [Art Academy](https://art-academy-react.netlify.app/).
+This project was created using react [Art Academy](https://art-academy-43360.web.app/).
 
 ## Website Details
 

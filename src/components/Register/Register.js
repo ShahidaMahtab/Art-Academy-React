@@ -38,7 +38,7 @@ const Register = () => {
   };
 
   return (
-    <Container className="mt-3 p-5 d-flex justify-content-center align-item-center">
+    <Container className="mt-5 p-5 d-flex justify-content-center align-item-center">
       {!(user.email || user.displayName) ? (
         <div className="w-50 border border-3 border-white shadow-lg py-4 px-5 mb-5">
           <h4 className="mb-5">Create an Account</h4>
@@ -141,8 +141,8 @@ const Register = () => {
           </p>
         </div>
       ) : (
-        <div className="border border-3 border-white mb-5 shadow-lg">
-          <div className="p-5">
+        <div className="border border-3 border-white shadow-lg m-5">
+          <div className="h-100 p-5 my-5">
             <p className="text-secondary fs-5 fw-bold">
               {user.displayName || user.email} <br />
               <small className="text-success">

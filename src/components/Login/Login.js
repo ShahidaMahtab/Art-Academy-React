@@ -20,14 +20,6 @@ const Login = () => {
     formState: { errors },
   } = useForm();
 
-  const history = useHistory();
-  const location = useLocation();
-  const redirect_uri = location?.state?.from || "/home";
-  const handleGoogleLogin = () => {
-    signInUsingGoogle().then((result) => {
-      history.push(redirect_uri);
-    });
-  };
   const {
     signInUsingGoogle,
     user,
@@ -36,6 +28,7 @@ const Login = () => {
     LoginUsingEmail,
     signInUsingGithub,
     handleResetPassword,
+    setIsLoading,
     logOut,
   } = useAuth();
   const onSubmit = (data) => {
@@ -45,6 +38,30 @@ const Login = () => {
   const onClick = (data) => {
     const { email } = data;
     handleResetPassword(email);
+  };
+  const history = useHistory();
+  const location = useLocation();
+  const redirect_uri = location.state?.from || "/home";
+  const handleGoogleLogin = () => {
+    signInUsingGoogle()
+      .then((result) => {
+        history.push(redirect_uri);
+      })
+      .finally(() => setIsLoading(false));
+  };
+  const handleGithubLogin = () => {
+    signInUsingGithub()
+      .then(() => {
+        history.push(redirect_uri);
+      })
+      .finally(() => setIsLoading(false));
+  };
+  const handleFaceBookLogin = () => {
+    signInUsingFacebook()
+      .then(() => {
+        history.push(redirect_uri);
+      })
+      .finally(() => setIsLoading(false));
   };
   return (
     <Container className="mt-3 p-5 d-flex justify-content-center align-item-center">
@@ -121,13 +138,13 @@ const Login = () => {
               <FontAwesomeIcon icon={["fab", "google"]} />
             </button>
             <button
-              onClick={signInUsingGithub}
+              onClick={handleGithubLogin}
               className="btn btn-dark me-2 border border-0 rounded"
             >
               <FontAwesomeIcon icon={["fab", "github"]} />
             </button>
             <button
-              onClick={signInUsingFacebook}
+              onClick={handleFaceBookLogin}
               className="btn btn-dark me-2 border border-0 rounded"
             >
               <FontAwesomeIcon icon={["fab", "facebook"]} />
