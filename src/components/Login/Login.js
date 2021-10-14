@@ -66,7 +66,7 @@ const Login = () => {
   return (
     <Container className="mt-3 p-5 d-flex justify-content-center align-item-center">
       {!(user.email || user.displayName) ? (
-        <div className="w-50 border border-3 border-white shadow-lg py-4 px-5 mb-5">
+        <div className="w-md-50 border border-3 border-white shadow-lg py-4 px-5 mb-5">
           <h4 className="mb-5">Please Login</h4>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="row mb-3">
