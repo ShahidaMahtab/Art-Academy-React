@@ -64,7 +64,7 @@ const Login = () => {
       .finally(() => setIsLoading(false));
   };
   return (
-    <Container className="mt-3 p-5 d-flex justify-content-center align-item-center">
+    <Container className="mt-5 p-5 d-flex justify-content-center align-item-center">
       {!(user.email || user.displayName) ? (
         <div className="w-md-50 border border-3 border-white shadow-lg py-4 px-5 mb-5">
           <h4 className="mb-5">Please Login</h4>
