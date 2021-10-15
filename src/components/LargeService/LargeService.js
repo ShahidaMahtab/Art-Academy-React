@@ -13,11 +13,13 @@ const LargeService = () => {
   };
   return (
     <Container className="my-5 text-center text-dark mx-auto">
-      <Title
-        titleStart="Our"
-        titleEnd="Services"
-        subtitle="best services 2021"
-      ></Title>
+      <div className="pt-5">
+        <Title
+          titleStart="Our"
+          titleEnd="Services"
+          subtitle="best services 2021"
+        ></Title>
+      </div>
       <div>
         <Row xs={1} md={2} lg={4} className="g-4 mt-2 mx-auto">
           {services.map((service) => (

@@ -7,7 +7,7 @@ This project was created using react [Art Academy](https://art-academy-43360.web
 * This website helps student to enroll in art academy.
 * Website consists of four section home,about us,services,contact.
 * Different type of courses from basic to advance courses are available.
-* Students interesed in art can easily navigate the website.
+* Students interesed in coures can add courses to cart.
 
 ## Available Scripts
 
